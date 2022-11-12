@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <MainContainer>
       <div className={style.container}>
-        <Link href="/shop">
+        <Link href="/Shop">
           <div className={style.rightBanner}>
             <div className={style.textBanner}>EMPT S/S 21`</div>
 
