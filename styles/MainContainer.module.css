@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+.sideBar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  margin: 0;
+  height: 98.9vh;
+  width: 20vw;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border: 3px solid black;
+  transition: 1s;
+  position: sticky;
+  top: 0;
+}
+.logoButton {
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoPlace {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+}
+
+.cardButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 11;
+}
+
+.botomnFooter {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  height: 100px;
+  background: #000;
+  color: #fff;
+  margin: 0;
+}
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sideBar {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+  }
+  .infoPlace {
+    display: none;
+    z-index: 10;
+  }
+  .logoButton {
+    margin-left: 20px;
+  }
+  .cardButton {
+    margin-right: 20px;
+  }
+}

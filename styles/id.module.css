@@ -1,0 +1,85 @@
+.itemContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.galerey {
+  width: 40vw;
+  height: 99vh;
+  border: 3px solid black;
+}
+.mainPhoto {
+}
+.photo {
+  max-width: 40vw;
+  max-height: 100vh;
+  object-fit: contain;
+}
+.prevPhoto {
+}
+.itemDescription {
+  width: 40vw;
+  height: 99vh;
+  border: 3px solid black;
+}
+.price {
+  margin: 30px;
+  font-size: 45px;
+  font-weight: bold;
+}
+.sizes {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.size {
+  margin: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(83, 83, 83);
+  transition: 500ms;
+}
+.size:hover {
+  transform: scale(1.2);
+  color: rgb(0, 0, 0);
+  cursor: not-allowed;
+}
+
+.itemName {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 30px;
+}
+
+.cardButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+.cardButton {
+  margin: 0 auto;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1000px) {
+  .itemContent {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .galerey {
+    width: 99vw;
+    height: 60vh;
+  }
+
+  .photo {
+    max-width: 99vw;
+    max-height: 60vh;
+    object-fit: contain;
+  }
+  .prevPhoto {
+  }
+  .itemDescription {
+    width: 99vw;
+    height: 60vh;
+    border: 3px solid black;
+  }
+} ;
