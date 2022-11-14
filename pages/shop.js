@@ -1,10 +1,9 @@
 import Link from "next/link";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import MainContainer from "../components/MainContainer";
 import style from "../styles/Shop.module.css";
 import ShopItem from "../components/ShopItem";
-const shop = () => {
+const Shop = () => {
   const [items] = useState([
     { id: 1, name: "hoodie" },
     { id: 2, name: "Blood batryal sweeter" },
@@ -26,4 +25,4 @@ const shop = () => {
   );
 };
 
-export default shop;
+export default Shop;

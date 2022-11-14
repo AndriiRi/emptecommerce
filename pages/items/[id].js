@@ -2,7 +2,7 @@ import MainContainer from "../../components/MainContainer";
 import style from "../../styles/id.module.css";
 import MainPhoto from "../../public/image/EmptSwetre.jpg";
 import Image from "next/image";
-export default function () {
+const Ids = () => {
   return (
     <MainContainer>
       <div className={style.itemContent}>
@@ -33,4 +33,5 @@ export default function () {
       </div>
     </MainContainer>
   );
-}
+};
+export default Ids;
