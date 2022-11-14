@@ -13,7 +13,12 @@ export default function Home() {
           <div className={style.rightBanner}>
             <div className={style.textBanner}>EMPT S/S 21`</div>
 
-            <Image className={style.bannerImg} src={White} alt="image" />
+            <Image
+              className={style.bannerImg}
+              src={White}
+              alt="image"
+              priority
+            />
           </div>
         </Link>
         <div className={style.leftBanner}>
