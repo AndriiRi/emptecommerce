@@ -1,6 +1,6 @@
 import MainContainer from "../../components/MainContainer";
 import style from "../../styles/id.module.css";
-import MainPhoto from "../../public/image/EmptSwetre.jpg";
+import mainPhoto from "../../public/image/EmptSwetre.jpg";
 import Image from "next/image";
 const Ids = () => {
   return (
@@ -10,7 +10,7 @@ const Ids = () => {
           <div className={style.mainPhoto}>
             <Image
               className={style.photo}
-              src={MainPhoto}
+              src={mainPhoto}
               alt="image"
               priority
             />

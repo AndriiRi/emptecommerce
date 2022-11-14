@@ -3,8 +3,8 @@ import MainContainer from "../components/MainContainer";
 import style from "../styles/MainBanners.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import Staf from "../public/image/swetre.jpg";
-import White from "../public/image/white.jpg";
+import staf from "../public/image/swetre.jpg";
+import white from "../public/image/white.jpg";
 export default function Home() {
   return (
     <MainContainer>
@@ -15,14 +15,14 @@ export default function Home() {
 
             <Image
               className={style.bannerImg}
-              src={White}
+              src={white}
               alt="image"
               priority
             />
           </div>
         </Link>
         <div className={style.leftBanner}>
-          <Image className={style.bannerImg} src={Staf} alt="image" priority />
+          <Image className={style.bannerImg} src={staf} alt="image" priority />
         </div>
       </div>
     </MainContainer>
