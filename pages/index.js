@@ -22,7 +22,7 @@ export default function Home() {
           </div>
         </Link>
         <div className={style.leftBanner}>
-          <Image className={style.bannerImg} src={Staf} alt="image" />
+          <Image className={style.bannerImg} src={Staf} alt="image" priority />
         </div>
       </div>
     </MainContainer>

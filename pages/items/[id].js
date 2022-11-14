@@ -8,7 +8,12 @@ const Ids = () => {
       <div className={style.itemContent}>
         <div className={style.galerey}>
           <div className={style.mainPhoto}>
-            <Image className={style.photo} src={MainPhoto} alt="image" />
+            <Image
+              className={style.photo}
+              src={MainPhoto}
+              alt="image"
+              priority
+            />
           </div>
           <div className={style.prevPhoto}></div>
         </div>

@@ -10,7 +10,7 @@ const ShopItem = () => {
     <div className={style.shopItem}>
       <div className={style.itemImageContainer}>
         <div className={style.itemName}>EMPT Logo Sweatre</div>
-        <Image className={style.itemImage} src={Item} alt="image" />
+        <Image className={style.itemImage} src={Item} alt="image" priority />
       </div>
     </div>
   );
