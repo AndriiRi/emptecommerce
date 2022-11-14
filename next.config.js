@@ -10,3 +10,4 @@ module.exports = {
     loaderFile: "./my/image/loader.js",
   },
 };
+return nextConfig;
