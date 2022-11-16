@@ -9,23 +9,27 @@ const MainContainer = ({ children, keywords }) => {
         <meta keywords={"empt, sweatre" + keywords}></meta>
         <title>EMPT</title>
       </Head>
-      <div className="w-1440px h-screen bg-slate-400">
-        <div>
-          <aside>
-            <Link className="text-2xl" href={"/"}>
+      <div className=" mx-auto max-w-7xl min-h-screen border-4 border-black solid  ">
+        <div className="flex">
+          <aside className=" sticky top-0 grid grid-rows-12 grid-cols-1 w-1/5 h-screen border-4 border-black solid">
+            <Link className="flex justify-center mt-5" href={"/"}>
               LOGO
             </Link>
 
-            <div className="bg-black text-3xl">
-              <p className="text-2xl bg-blend-color-burn">About</p>
+            <div className="flex justify-center">
+              <p className="">About</p>
               <p>Contacts</p>
             </div>
 
-            <Link href={"/shop"}>CARD</Link>
+            <Link className="flex justify-center" href={"/shop"}>
+              CARD
+            </Link>
           </aside>
-          <div>{children}</div>
+          <div className="w-full grid grid-rows-1">{children}</div>
         </div>
-        <footer>EMPT</footer>
+        <footer className="flex justify-center h-40 items-center min-w-full border-4 border-black solid bg-stone-400">
+          EMPT
+        </footer>
       </div>
     </>
   );
