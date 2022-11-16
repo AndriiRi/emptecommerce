@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import MainContainer from "../components/MainContainer";
-import style from "../styles/Shop.module.css";
 import ShopItem from "../components/ShopItem";
 const Shop = () => {
   const [items] = useState([
@@ -12,7 +11,7 @@ const Shop = () => {
   ]);
   return (
     <MainContainer>
-      <div className={style.itemsList}>
+      <div>
         {items.map((item) => (
           <div key={item.id}>
             <Link href={`/items/${item.id}`}>
