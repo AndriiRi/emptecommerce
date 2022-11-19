@@ -11,11 +11,10 @@ const Shop = () => {
   ]);
   return (
     <MainContainer>
-      <div className="grid grid-cols-2">
+      <div className="grid sm:grid-cols-2">
         {items.map((item) => (
           <div key={item.id}>
             <Link href={`/items/${item.id}`}>
-              <ShopItem />
               <ShopItem />
             </Link>
           </div>

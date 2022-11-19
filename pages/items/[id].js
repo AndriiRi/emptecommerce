@@ -4,7 +4,7 @@ import Image from "next/image";
 const Ids = () => {
   return (
     <MainContainer>
-      <div className="grid grid-cols-2">
+      <div className="grid lg:grid-cols-2">
         <div className="border-4 border-black solid">
           <div>
             <Image src={mainPhoto} alt="image" priority />

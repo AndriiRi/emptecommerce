@@ -6,7 +6,7 @@ import Banner from "../public/image/Banner.jpg";
 export default function Home() {
   return (
     <MainContainer>
-      <div className="grid grid-cols-2">
+      <div className=" grid sm:grid-cols-2">
         <Link href="/shop">
           <div className=" w-full flex justify-center items-center h-screen border-4 border-black solid">
             EMPT S/S 21`
@@ -17,7 +17,6 @@ export default function Home() {
           <Image
             className="object-cover h-full w-full "
             src={Banner}
-            alt="banner"
             priority
           />
         </div>
