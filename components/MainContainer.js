@@ -15,26 +15,36 @@ const MainContainer = ({ children, keywords }) => {
         <div className="flex">
           <aside className=" sticky top-0 flex-col  w-1/5 h-screen border-4 border-black solid">
             <Link className="flex justify-center " href={"/"}>
-              <Logo className="object-cover" />
+              <Logo />
             </Link>
 
-            <div className=" flex flex-col items-center">
-              <p>About</p>
-              <p>Contacts</p>
+            <div className=" flex flex-col items-center text-4xl">
+              <Link href={"/about"}>About</Link>
+              <Link href={"/contacts"}>Contacts</Link>
             </div>
             <div className=" flex-col  min-w-full   absolute bottom-10 ">
-              <Link className="flex items-center justify-center" href={"/shop"}>
+              <Link
+                className="flex items-center justify-center my-8"
+                href={"/card"}
+              >
                 <Card />
               </Link>
-              <Link className="flex items-center justify-center" href={"/shop"}>
+              <Link
+                className="flex items-center justify-center "
+                href={"/shop"}
+              >
                 <Arrow />
               </Link>
             </div>
           </aside>
           <div className="w-full grid grid-rows-1">{children}</div>
         </div>
-        <footer className="flex justify-center h-40 items-center min-w-full border-4 border-black solid bg-stone-400">
-          EMPT
+        <footer className="flex justify-between px-8 h-40 items-center min-w-full border-4 border-black solid bg-stone-400">
+          <Logo />
+
+          <div>2021</div>
+
+          <p>Contacts</p>
         </footer>
       </div>
     </>
