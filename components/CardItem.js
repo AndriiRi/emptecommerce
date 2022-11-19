@@ -9,6 +9,7 @@ const CardItem = () => {
       <Image
         className=" w-28 h-full object-contain border-4 border-black solid"
         src={Unit}
+        alt="image"
       />
       <p className=" flex items-center justify-center">
         empt blood betrayal jacket

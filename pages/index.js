@@ -17,6 +17,7 @@ export default function Home() {
           <Image
             className="object-cover h-full w-full "
             src={Banner}
+            alt="banner"
             priority
           />
         </div>
