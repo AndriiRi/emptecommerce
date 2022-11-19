@@ -1,14 +1,17 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Swetre from "../public/image/EmptSwetre.jpg";
 const ShopItem = () => {
   const { query } = useRouter();
   console.log(query);
   return (
     <div>
-      <div>
-        <div>EMPT Logo Sweatre</div>
-        <Image alt="image" priority />
+      <div className=" border-4 border-black solid">
+        <Image src={Swetre} alt="image" priority />
+        <div className="flex  justify-center items-center">
+          EMPT Logo Sweatre
+        </div>
       </div>
     </div>
   );

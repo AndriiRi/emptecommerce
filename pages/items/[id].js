@@ -4,26 +4,28 @@ import Image from "next/image";
 const Ids = () => {
   return (
     <MainContainer>
-      <div>
-        <div>
+      <div className="grid grid-cols-2">
+        <div className="border-4 border-black solid">
           <div>
-            <Image alt="image" priority />
+            <Image src={mainPhoto} alt="image" priority />
           </div>
           <div></div>
         </div>
 
-        <div>
-          <h1>ttb empt logo Sweatre</h1>
+        <div className="border-4 border-black solid py-6 px-6">
+          <h1 className="text-4xl font-extrabold">ttb empt logo Sweatre</h1>
           <p></p>
-          <ul>
+          <ul className="text-base">
             <li>97% coton</li>
             <li>3% polyamid</li>
           </ul>
-          <div>₴2490</div>
-          <div>
-            <div>S</div>
-            <div>M</div>
-            <div>L</div>
+          <div className="text-4xl font-extrabold">₴2490</div>
+          <div className="flex justify-center text-3xl font-bold">
+            <div className="m-4 rounded-[50%] border-4 border-black solid">
+              S
+            </div>
+            <div className="m-4">M</div>
+            <div className="m-4">L</div>
           </div>
           <div>
             <button> Add To Card</button>
